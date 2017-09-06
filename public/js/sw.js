@@ -1,4 +1,4 @@
-var CACHE_NAME = 'static-v2';
+var CACHE_NAME = 'static-v3';
 
 self.addEventListener('install', function (event) {
   event.waitUntil(
@@ -6,7 +6,7 @@ self.addEventListener('install', function (event) {
       return cache.addAll([
         '/',
         '/index.html',
-        '/manifest.js',
+        '/manifest.json',
         '/404.html',
         '/js/materialize.min.js',
         '/js/jquery-2.1.1.min.js',
